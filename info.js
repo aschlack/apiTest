@@ -6,115 +6,115 @@ let info = {
             [
                 {
                     artist: "Jimi Hendrix",
-                    artist_key: "#key#"
+                    artist_key: "jimi_hendrix"
                 },
                 {
                     artist: "The Beatles",
-                    artist_key: "#key#"
+                    artist_key: "the_beatles"
                 },
                 {
                     artist: "Pink Floyd",
-                    artist_key: "#key#"
+                    artist_key: "pink_floyd"
                 },
                 {
                     artist: "Santana",
-                    artist_key: "#key#"
+                    artist_key: "santana"
                 },
                 {
                     artist: "James Brown",
-                    artist_key: "#key#"
+                    artist_key: "james_brown"
                 }
             ]},
             { decade: "1990's",
                 data: [
                 {
                     artist: "Nirvana",
-                    artist_key: "#key#"
+                    artist_key: "nirvana"
                 },
                 {
                     artist: "Silverchair",
-                    artist_key: "#key#"
+                    artist_key: "silverchair"
                 },
                 {
                     artist: "Dr. Dre",
-                    artist_key: "#key#"
+                    artist_key: "dr._dre"
                 },
                 {
                     artist: "Wu-Tang Clan",
-                    artist_key: "#key#"
+                    artist_key: "wu-tang_clan"
                 },
                 {
                     artist: "Nine Inch Nails",
-                    artist_key: "#key#"
+                    artist_key: "nine_inch_nails"
                 }
             ]},
             { decade: "2000's",
             data: [
                 {
                     artist: "My Morning Jacket",
-                    artist_key: "#key#"
+                    artist_key: "my_morning_jacket"
                 },
                 {
                     artist: "Amy Winehouse",
-                    artist_key: "#key#"
+                    artist_key: "amy_winehouse"
                 },
                 {
                     artist: "Thrice",
-                    artist_key: "#key#"
+                    artist_key: "thrice"
                 },
                 {
                     artist: "Thursday",
-                    artist_key: "#key#"
+                    artist_key: "thursday"
                 },
                 {
                     artist: "Sage Francis",
-                    artist_key: "#key#"
+                    artist_key: "sage_francis"
                 } 
             ]},
             { decade: "2010's",
             data: [
                 {
                     artist: "Kendrick Lamar",
-                    artist_key: "#key#"
+                    artist_key: "kendrick_lamar"
                 },
                 {
-                    artist: "Airborne Toxic Event",
-                    artist_key: "#key#"
+                    artist: "The Airborne Toxic Event",
+                    artist_key: "the_airborne_toxic_event"
                 },
                 {
                     artist: "Spillage Village",
-                    artist_key: "#key#"
+                    artist_key: "spillage_village"
                 },
                 {
                     artist: "Frightened Rabbit",
-                    artist_key: "#key#"
+                    artist_key: "frightened_rabbit"
                 },
                 {
                     artist: "H.E.R.",
-                    artist_key: "#key#"
+                    artist_key: "h.e.r."
                 }
             ]},
             { decade: "2020's",
                 data: [
                 {
-                    artist: "JMSN",
-                    artist_key: "#key#"
+                    artist: "Spanish Love Songs",
+                    artist_key: "spanish_love_songs"
                 },
                 {
-                    artist: "Gary Clack Jr.",
-                    artist_key: "#key#"
+                    artist: "Gary Clark Jr.",
+                    artist_key: "gary_clark_jr."
                 },
                 {
                     artist: "SZA",
-                    artist_key: "#key#"
+                    artist_key: "sza"
                 },
                 {
                     artist: "Sleep Token",
-                    artist_key: "#key#"
+                    artist_key: "sleep_token"
                 },
                 {
-                    artist: "Pink Shift",
-                    artist_key: "#key#"
+                    artist: "Fantastic Negrito",
+                    artist_key: "fantastic_negrito"
                 }
             ]}
     ]
