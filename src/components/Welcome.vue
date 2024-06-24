@@ -16,14 +16,13 @@
 </template>
   
 <script>
-
 export default {
   name: 'Welcome',
   props: {
     data: {
       type: Object,
     }
-  }
+  },
 }
 
 </script>
