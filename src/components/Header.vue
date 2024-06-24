@@ -1,5 +1,5 @@
 <template>
-    <header class="place-content-center">
+    <header class="mb-10 mt-6">
         <Title />
     </header>
     

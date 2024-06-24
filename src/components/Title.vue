@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <span class="small -rotate-1 relative block text-base mr-32">(some of)</span>
-        <h1 class="m-0 leading-10"><span class="line-one -rotate-2 block text-5xl">the music that</span><br /><span class="line-two rotate-2 relative -top-9 block text-4xl">made me</span></h1>
-    </div>
+        <span class="small -rotate-1 relative block text-base mr-32 tracking-wide">(some of)</span>
+        <div class="m-0 leading-10 page-heading">
+            <span class="line-one -rotate-2 block text-5xl tracking-tight">the music that</span>
+            <span class="line-two rotate-2 relative top-1 block text-4xl tracking-tight">made me</span>
+        </div>
   </template>
   
   <script>
@@ -13,23 +14,24 @@
   
   <style lang="scss" scoped>
 
-    h1 {
+    .page-heading {
         font-family: "Alegreya", serif;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
-        color: #fff;
         .line-one {
             background: #fa911e;
+            color: #000b40;
         }
         .line-two {
             background: #000b40;
+            color: #fa911e;
         }
     }
     .small {
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 200;
+        font-weight: 400;
         font-style: normal;
     }
 

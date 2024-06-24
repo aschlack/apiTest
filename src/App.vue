@@ -1,21 +1,28 @@
 <template>
   <Header />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Welcome :data="decades" />
   <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Welcome from './components/Welcome.vue';
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+
+import info from "../info";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Header,
-    Footer
-  }
+    Footer,
+    Welcome,
+  },
+  data() {
+    return {
+      decades: info.decades,
+    };
+  },
 }
 </script>
 
@@ -25,6 +32,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #000b40;
+  color: #1a1b1e;
 }
 </style>
