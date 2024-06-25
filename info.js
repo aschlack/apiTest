@@ -8,7 +8,7 @@ let info = {
                     artist: "Jimi Hendrix",
                     artist_key: "jimi_hendrix"
                 },
-                {
+                {   
                     artist: "The Beatles",
                     artist_key: "the_beatles"
                 },
@@ -82,8 +82,8 @@ let info = {
                     artist_key: "the_airborne_toxic_event"
                 },
                 {
-                    artist: "Spillage Village",
-                    artist_key: "spillage_village"
+                    artist: "Glass Animals",
+                    artist_key: "glass_animals"
                 },
                 {
                     artist: "Frightened Rabbit",

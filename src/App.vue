@@ -1,6 +1,8 @@
 <template>
   <Header />
-  <Welcome :data="decades" />
+  <div class="lg:w-6/12 sm:8/12 special-margin">
+    <Welcome :data="decades" />
+  </div>
   <Footer />
 </template>
 
@@ -27,11 +29,29 @@ export default {
 </script>
 
 <style lang="scss">
+body{ margin:0 auto; }
 #app {
   font-family: Raleway, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #1a1b1e;
+}
+.blue-type {
+  color: #000b40;
+}
+.standard-link {
+  &:hover {
+    text-decoration: none;
+  }
+  text-decoration: underline;
+}
+.special-margin{
+  @media (min-width: 1023px) {
+    margin-left: 25%;
+    margin-right: 25%
+  }
+  margin-left: 16.666667%;
+  margin-right: 16.666667%;
 }
 </style>
