@@ -2,7 +2,7 @@
   <div v-if="artistName" class="flex items-center justify-center flex-col">
     <img
       v-if="artistLogo"
-      class="my-4 max-w-md"
+      class="my-4 lg:max-w-md max-w-sm"
       :src="artistLogo"
       :alt="artistName"
     />
@@ -24,7 +24,7 @@
       }}<img src="../assets/img/external-link.svg" class="size-4 inline-block ml-1" alt="External Link" /></a>
     </div>
 
-    <img class="mt-8 max-w-lg" :src="artistImg" alt="Band" />
+    <img class="mt-8 lg:max-w-lg max-w-sm" :src="artistImg" alt="Band" />
   </div>
   <div v-else-if="error" class="text-lg font-bold text-red-700">
     Sorry, we are unable to retrieve this artist's information at this time.
