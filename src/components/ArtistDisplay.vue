@@ -19,7 +19,7 @@
     </div>
     <div v-if="artistURL" class="mt-8 text-left w-full">
       <h2 class="text-base font-bold uppercase blue-type">Artist Website:</h2>
-      <a class="standard-link text-lg" target="_blank" :href="artistLink" :aria-description="'Visit ' + artistName + ' website. This link will open in a new window.'">{{
+      <a class="standard-link text-lg" target="_blank" :href="artistLink" :aria-label="'Visit ' + artistName + ' website. This link will open in a new window.'">{{
         artistURL
       }}<img src="../assets/img/external-link.svg" class="size-4 inline-block ml-1" alt="External Link" /></a>
     </div>

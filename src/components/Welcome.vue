@@ -17,7 +17,7 @@
         class="lg:mx-4 sm:mx-2 mx-1 lg:text-2xl sm:text-xl decade px-1 blue-type"
         :class="{ active: activeIndex === idx }"
         :aria-current="activeIndex === idx ? 'true' : 'false'"
-        :aria-description="'View artists from the' + decade.decade"
+        :aria-label="'View artists from the ' + decade.decade"
       >
         {{ decade.decade }}
       </button>

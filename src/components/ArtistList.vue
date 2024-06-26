@@ -7,7 +7,7 @@
       @click="setArtist(artistList.artist_key)"
       v-for="artistList in artistList"
       :key="artistList.artist_key"
-      :aria-description="'View information about ' + artistList.artist"
+      :aria-label="'View information about ' + artistList.artist"
     >
       {{ artistList.artist }}
     </button>
