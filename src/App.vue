@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="lg:w-6/12 sm:8/12 special-margin">
+  <div class="lg:w-6/12 sm:w-8/12 w-10/12 special-margin">
     <Welcome :data="decades" />
   </div>
   <Footer />
@@ -53,7 +53,11 @@ body {
     margin-left: 25%;
     margin-right: 25%;
   }
-  margin-left: 16.666667%;
-  margin-right: 16.666667%;
+  @media (max-width: 1022px) and (min-width: 640px) {
+    margin-left: 16.666667%;
+    margin-right: 16.666667%;
+  }
+  margin-left: 8.333335%;
+  margin-right: 8.333335%;
 }
 </style>
