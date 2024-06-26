@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import Welcome from './components/Welcome.vue';
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
+import Welcome from "./components/Welcome.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 import info from "../info";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Footer,
@@ -25,11 +25,13 @@ export default {
       decades: info.decades,
     };
   },
-}
+};
 </script>
 
 <style lang="scss">
-body{ margin:0 auto; }
+body {
+  margin: 0 auto;
+}
 #app {
   font-family: Raleway, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -46,10 +48,10 @@ body{ margin:0 auto; }
   }
   text-decoration: underline;
 }
-.special-margin{
+.special-margin {
   @media (min-width: 1023px) {
     margin-left: 25%;
-    margin-right: 25%
+    margin-right: 25%;
   }
   margin-left: 16.666667%;
   margin-right: 16.666667%;

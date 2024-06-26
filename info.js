@@ -115,6 +115,10 @@ let info = {
                 {
                     artist: "Fantastic Negrito",
                     artist_key: "fantastic_negrito"
+                },
+                {
+                    artist: "This will display an error",
+                    artist_key: "intentional_error"
                 }
             ]}
     ]
