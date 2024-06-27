@@ -4,7 +4,7 @@
       v-if="artistLogo"
       class="my-4 lg:max-w-md max-w-sm"
       :src="artistLogo"
-      :alt="artistName"
+      :alt="artistName + ' logo'"
     />
     <div v-if="!artistLogo" class="text-3xl font-bold blue-type">
       {{ artistName }}
@@ -17,24 +17,55 @@
       <h2 class="text-base font-bold uppercase blue-type">Artist Genre:</h2>
       <div class="text-lg">{{ artistGenre }}</div>
     </div>
+
+    <ArtistAlbums :artist="artist" />
+
     <div v-if="artistURL" class="mt-8 text-left w-full">
       <h2 class="text-base font-bold uppercase blue-type">Artist Website:</h2>
-      <a class="standard-link text-lg" target="_blank" :href="artistLink" :aria-label="'Visit ' + artistName + ' website. This link will open in a new window.'">{{
-        artistURL
-      }}<img src="../assets/img/external-link.svg" class="size-4 inline-block ml-1" alt="External Link" /></a>
+      <a
+        class="standard-link text-lg"
+        target="_blank"
+        :href="artistLink"
+        :aria-label="
+          'Visit ' +
+          artistName +
+          ' website. This link will open in a new window.'
+        "
+        >{{ artistURL
+        }}<img
+          src="../assets/img/external-link.svg"
+          class="size-4 inline-block ml-1"
+          alt="External Link"
+      /></a>
     </div>
 
-    <img class="mt-8 lg:max-w-lg max-w-sm" :src="artistImg" alt="Band" />
+    <img
+      class="mt-8 lg:max-w-lg max-w-sm"
+      :src="artistImg"
+      :alt="artistName + ' photo'"
+    />
   </div>
   <div v-else-if="error" class="text-lg font-bold text-red-700">
     Sorry, we are unable to retrieve this artist's information at this time.
   </div>
-  <div v-else class="text-xl font-bold blue-type">Loading Artist Info <img class="size-8 inline-block ml-1" src="../assets/img/loading.svg" alt="three dot loader visual" /></div>
+  <div v-else class="text-xl font-bold blue-type">
+    Loading Artist Info
+    <img
+      class="size-8 inline-block ml-1"
+      src="../assets/img/loading.svg"
+      alt="three dot loader visual"
+    />
+  </div>
 </template>
 
 <script>
+import ArtistAlbums from "./ArtistAlbums.vue";
+
 export default {
   name: "ArtistDisplay",
+  components: {
+    ArtistAlbums,
+  },
   props: ["artist"],
   data() {
     return {
@@ -71,5 +102,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
