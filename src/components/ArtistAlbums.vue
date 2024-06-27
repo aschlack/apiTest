@@ -1,7 +1,7 @@
 <template>
   <div v-if="artistAlbums" class="mt-8 text-left w-full">
     <h2 class="text-base font-bold uppercase blue-type">Albums:</h2>
-    <div v-for="album in artistAlbums" :key="album.strAlbum">
+    <div v-for="album in sortedAlbums" :key="album.strAlbum">
       <img
         class="mt-7 mb-3"
         v-if="album.strAlbumThumb"
@@ -62,6 +62,13 @@ export default {
         this.error = true;
       });
   },
+  computed: {
+    sortedAlbums() {
+      return this.artistAlbums.sort((a,b) => {
+        return a.intYearReleased.localeCompare(b.intYearReleased);
+      })
+    }
+  }
 };
 </script>
 
